@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Container-fluid utility similar to Bootstrap's container-fluid: full width with responsive side padding */
+.container-fluid {
+	width: 100%;
+	padding-left: 1rem; /* px-4 */
+	padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+	.container-fluid {
+		padding-left: 1.5rem; /* px-6 */
+		padding-right: 1.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container-fluid {
+		padding-left: 2rem; /* px-8 */
+		padding-right: 2rem;
+	}
+}
+
+html, body, #root { height: 100%; }
+
+body { background: #F8FAFC; color: #1F2937; }
